@@ -28,7 +28,7 @@
     <preference name="fullscreen"       value="false" />
 
 <!--     //access -->
-	<access origin="http://cloudmade.com" subdomain="true" />
+	<access origin="*" />
 
     <icon src="icon.png" />
     <gap:splash src="splash.png" />
