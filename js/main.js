@@ -30,14 +30,14 @@ $(document).delegate("#mapView", "pageinit", function() {
 	}
 	map.on('locationerror', onLocationError);
 	
-	$('#map').css({
-		'height': window.innerHeight
-	});
-	
 	$('#clientLocate').click(function() {
 		findLocation();
 	});
 	
-	
 	findLocation();
+	
+	// fix map height
+	$('#map').css({
+		'height': window.innerHeight + 100
+	});
 });
