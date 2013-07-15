@@ -2,7 +2,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.phonegap.memories-of-the-future"
-        version   = "0.0.9">
+        version   = "0.1.0">
     <name>Memories of the Future</name>
 
     <description>
@@ -26,8 +26,10 @@
     <preference name="orientation"      value="portrait" />
     <preference name="target-device"    value="universal" />
     <preference name="fullscreen"       value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="show-splash-screen-spinner" value="true" />
 
-<!--     //access -->
+<!--  access -->
 	<access origin="*" />
 
     <icon src="icon.png" />
