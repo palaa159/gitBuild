@@ -45,3 +45,11 @@ $(document).delegate("#mapView", "pageinit", function() {
 		'height': window.innerHeight + 100
 	});
 });
+
+$('#flip-mini').bind('change', function(event, ui) {
+	if($('#flip-mini').val() == 'on') {
+		alert('triggered explore mode');
+	} else {
+		alert('disable');
+	}
+});
