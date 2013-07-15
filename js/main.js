@@ -1,5 +1,8 @@
-var map = L.map('map');
-L.tileLayer('http://{s}.tile.cloudmade.com/API-key/997/256/{z}/{x}/{y}.png', {
+$( document ).delegate("#mapView", "pageinit", function() {
+  var map = L.map('map', {
+	zoomControl: false
+});
+L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
 	maxZoom: 18
 }).addTo(map);
 // init locate
@@ -23,3 +26,8 @@ function onLocationError(e) {
 	alert(e.message);
 }
 map.on('locationerror', onLocationError);
+
+$('#map').css({
+	'height': window.innerHeight - 47
+});
+});

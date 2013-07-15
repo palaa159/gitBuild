@@ -30,7 +30,7 @@
 				<p><a href="#share">Share</a></p>
 				<p><a href="#settings">Settings</a></p>
 			</div>
-			<p><a href="#map" data-role="button" data-inline="true">Click for map</a></p>
+			<p><a href="#mapView" data-role="button" data-inline="true">Click for map</a></p>
 		</div>
 	</div>
 
@@ -48,14 +48,17 @@
 	<div data-role="page" id="share"></div>
 	<div data-role="page" id="settings"></div>
 <!-- 	Map -->
-	<div data-role="page" id="map">
+	<div data-role="page" id="mapView">
 		<div data-role="header" data-position="fixed">
 			<a href="#contribute">Contribute</a>
 			<h1>Memories of the Future</h1>
 			<a href="#menu">About</a>
 		</div>
-		<div data-role="content">
-			<div id="map"></div>
+		<div data-role="content" id="map">
+		</div>
+		<div data-position="fixed" class="customFooter">
+				<a href="#" id="clientLocate" data-role="button" data-inline="true">Locate</a>
+				<a href="#" id="clientExplore" data-role="button" data-inline="true">Explore</a>
 		</div>
 	</div>
 	
