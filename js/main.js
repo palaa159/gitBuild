@@ -2,8 +2,12 @@ $(document).delegate("#mapView", "pageinit", function() {
 	var map = L.map('map', {
 		zoomControl: false
 	});
-	var myPos = L.circleMarker([44, 33], 10).addTo(map);
+	var myPos = L.circle([44, 33], 10, {
+		color: '#0080ff',
+		fillOpacity: 0.9
+	}).bindPopup('You are here').addTo(map);
 	L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
+		minZoom: 10,
 		maxZoom: 18
 	}).addTo(map);
 	// init locate
