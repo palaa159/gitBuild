@@ -27,6 +27,9 @@
     <preference name="target-device"    value="universal" />
     <preference name="fullscreen"       value="false" />
 
+<!--     //access -->
+	<access origin="*" />
+
     <icon src="icon.png" />
     <gap:splash src="splash.png" />
     
