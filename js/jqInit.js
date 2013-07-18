@@ -1,6 +1,6 @@
 $( document ).bind( "mobileinit", function() {
     // Make your jQuery Mobile framework configuration changes here!
-    $.mobile.defaultPageTransition = 'none';
+    /* $.mobile.defaultPageTransition = 'none'; */
     $.mobile.buttonMarkup.hoverDelay = 0;
     $.mobile.allowCrossDomainPages = true;
     

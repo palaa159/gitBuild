@@ -42,7 +42,11 @@ $(document).delegate("#mapView", "pageinit", function() {
 	
 	// fix map height
 	$('#map').css({
-		'height': window.innerHeight + 100
+		'position': 'fixed',
+		'top': 0,
+		'left': 0,
+		'width': window.innerWidth,
+		'height': window.innerHeight
 	});
 });
 
